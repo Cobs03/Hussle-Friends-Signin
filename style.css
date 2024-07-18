@@ -143,7 +143,6 @@
     display: flex;
     position: relative;
     margin: 5px 0;
-    border: 1px solid black;
 }
 
 .password-icon {
