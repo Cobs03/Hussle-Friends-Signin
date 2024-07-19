@@ -14,7 +14,7 @@ function signup() {
 
 function login() {
     loginForm.style.left = "0%";
-    signupForm.style.left = "450px";
+    signupForm.style.left = "120%";
     btn.style.left = "2%";
     signBtn.style.color = "black";
     logBtn.style.color = "#d1d5db";

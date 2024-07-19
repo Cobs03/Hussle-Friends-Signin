@@ -1,3 +1,4 @@
+/* General Reset Styles */
 *,
 *::after,
 *::before {
@@ -28,7 +29,7 @@
 
 .content {
     height: 70%;
-    width: 30%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -50,8 +51,8 @@
     width: 40%;
 }
 
-.button-box{
-    width: 58%;
+.button-box {
+    width: 78%;
     height: 10%;
     margin: 20px auto;
     position: relative;
@@ -62,7 +63,7 @@
 
 .toggle-btn {
     height: 100%;
-    padding: 10px 28px;
+    padding: 10px 19px;
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -78,7 +79,7 @@
     height: 80%;
     background: linear-gradient(to right, rgb(116, 116, 116) 0%, rgb(57, 57, 57) 99.4%);
     border-radius: 7px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .form {
@@ -86,10 +87,11 @@
 }
 
 .form-content {
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
     overflow: hidden;
+    left: 5%;
 }
 
 .forms {
@@ -100,8 +102,6 @@
 .input-group {
     position: relative;
     margin-bottom: 0.4rem;
-    width: 100%;    
-
 }
 
 .input-icon {
@@ -189,7 +189,6 @@
 }
 
 .button {
-
     display: flex;
     justify-content: center;
 }
@@ -202,6 +201,7 @@
     font-weight: 500;
     border-radius: 0.5rem;
     transition: background-color 0.2s ease, color 0.2s ease;
+    margin-top: 1%;
 }
 
 .btn:hover {
@@ -220,7 +220,7 @@
 
 .check {
     position: relative;
-    left: 13%;
+    left: 10%;
     padding: 0;
 }
 
@@ -232,4 +232,79 @@
 #SignUp {
     left: 450px;
     transition: 0.5s;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 575px) {
+    .button-box {
+        width: 68%;
+    }
+    .toggle-btn {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .content {
+        height: 75%;
+        width: 60%;
+    }
+    .button-box {
+        width: 68%;
+    }
+    .toggle-btn {
+        padding: 10px 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        height: 75%;
+        width: 50%;
+    }
+    .button-box {
+        width: 58%;
+    }
+    .toggle-btn {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .content {
+        height: 75%;
+        width: 40%;
+    }
+    .button-box {
+        width: 58%;
+    }
+    .toggle-btn {
+        padding: 10px 29px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    .content {
+        height: 75%;
+        width: 30%;
+    }
+    .button-box {
+        width: 55%;
+    }
+    .toggle-btn {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .content {
+        height: 75%;
+        width: 30%;
+    }
+    .button-box {
+        width: 58%;
+    }
+    .toggle-btn {
+        padding: 10px 30px;
+    }
 }
