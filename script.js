@@ -58,7 +58,7 @@ function AccountSignIn() {
 
         localStorage.setItem("firstName", firstNameInput);
         localStorage.setItem("lastName", lastNameInput);
-        localStorage.setItem("email", newEmailInput);
+        localStorage.setItem("email", newEmailInput);``
         localStorage.setItem("password", newPasswordInput);
 
         return true; // Form will submit
@@ -73,10 +73,10 @@ function AccountSignIn() {
 function togglePasswordVisibility(inputId) {
     var input = document.getElementById(inputId);
     if (input.type === "password") {
-        document.getElementById("pass-icon").src = 'Assets/pass-not-eye.svg'
+        document.getElementsByClassName("pass-icon").src = 'Assets/pass-not-eye.svg'
         input.type = "text";
     } else {
-        document.getElementById("pass-icon").src = 'Assets/pass-eye.svg'
+        document.getElementsByClassName("pass-icon").src = 'Assets/pass-eye.svg'
         input.type = "password";
     }
 }
